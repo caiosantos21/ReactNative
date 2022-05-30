@@ -1,4 +1,4 @@
-import {DefaultTheme} from '../theme';
+import { DefaultTheme } from '../theme';
 
 export const dark: DefaultTheme = {
   title: 'dark',

@@ -1,3 +1,3 @@
-import {dark} from './dark';
+import { dark } from './dark';
 
-export {dark};
+export { dark };
