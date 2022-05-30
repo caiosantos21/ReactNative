@@ -1,7 +1,7 @@
-import {Icon, ListItem} from '@rneui/themed';
+import { Icon, ListItem } from '@rneui/themed';
 import React from 'react';
-import {TouchableOpacity} from 'react-native';
-import {CustomListItemProps} from './CustomListItem';
+import { TouchableOpacity } from 'react-native';
+import { CustomListItemProps } from './CustomListItem';
 
 export const CustomListItem = ({
   description,

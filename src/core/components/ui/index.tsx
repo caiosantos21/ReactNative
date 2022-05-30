@@ -1,3 +1,3 @@
-import {CustomListItem} from './CustomListItem';
+import { CustomListItem } from './CustomListItem';
 
-export {CustomListItem};
+export { CustomListItem };

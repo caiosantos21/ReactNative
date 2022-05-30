@@ -1,5 +1,5 @@
-import {Card} from './Card';
-import {MainBody} from './MainBody';
-import {MainContainer} from './MainContainer';
+import { Card } from './Card';
+import { MainBody } from './MainBody';
+import { MainContainer } from './MainContainer';
 
-export {Card, MainContainer, MainBody};
+export { Card, MainContainer, MainBody };

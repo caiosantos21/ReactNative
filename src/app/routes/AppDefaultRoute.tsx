@@ -1,10 +1,10 @@
-import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { Home } from 'app/Home';
 import React from 'react';
-import {DefaultComponent} from '../DefaultComponent';
-import Home from '../Home';
-import {TreinoHome} from '../Treino';
-import {AppStackParamList} from './AppDefaultRouteStack';
+import { DefaultComponent } from '../DefaultComponent';
+import { TreinoHome } from '../Treino';
+import { AppStackParamList } from './AppDefaultRouteStack';
 
 const AppStack = createNativeStackNavigator<AppStackParamList>();
 
