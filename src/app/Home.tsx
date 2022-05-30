@@ -1,7 +1,7 @@
 import { useNavigation } from '@react-navigation/native';
-import { MainBody } from 'core/components/containers/MainBody';
-import { MainContainer } from 'core/components/containers/MainContainer';
 import React from 'react';
+import { MainBody } from '../core/components/containers/MainBody';
+import { MainContainer } from '../core/components/containers/MainContainer';
 import { CustomListItem } from '../core/components/ui';
 import {
   AppStackParamList,
