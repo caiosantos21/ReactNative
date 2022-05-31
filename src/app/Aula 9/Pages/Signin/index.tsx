@@ -5,25 +5,35 @@ import { StyleSheet, Text, View } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 
 export const SignIn = () => {
-  const [login, setLogin] = useState();
-  const [password, setPassword] = useState();
+  const [login, setLogin] = useState('');
+  const [password, setPassword] = useState('');
 
   const onLogin = () => {
-    alert('Logado');
+    console.log('Logado');
   };
 
   const onRegister = () => {
-    alert('Logado');
+    console.log('Logado');
   };
 
   return (
     <View style={styles.container}>
-      <Animatable.View
-        animation="fadeInLeft"
-        delay={500}
-        style={styles.containerHeader}>
-        <Text style={styles.message}>Mal Vindo</Text>
-      </Animatable.View>
+      <View style={styles.containerLogo}>
+        <Animatable.Image
+          animation="flipInY"
+          source={{
+            uri: 'https://th.bing.com/th/id/OIP.jDhdZhWkXr7xDIRtvXEcEQHaHa?pid=ImgDet&rs=1',
+          }}
+          style={{ width: 200, height: 200, borderRadius: 100 }}
+        />
+
+        <Animatable.View
+          animation="fadeInLeft"
+          delay={500}
+          style={styles.containerHeader}>
+          <Text style={styles.message}>Mal Vindo</Text>
+        </Animatable.View>
+      </View>
 
       <Animatable.View animation="fadeInUp" style={styles.containerForm}>
         <Input
@@ -61,10 +71,11 @@ export const SignIn = () => {
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#38A69D' },
+  containerLogo: { flex: 1, justifyContent: 'center', alignItems: 'center' },
   containerHeader: {
     justifyContent: 'center',
     alignItems: 'center',
-    marginVertical: '10%',
+    marginVertical: '5%',
     paddingStart: '5%',
   },
   message: {

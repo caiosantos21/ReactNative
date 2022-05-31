@@ -5,6 +5,7 @@ export type AppStackParamList = {
   Home: undefined;
   TreinoHome: undefined;
   DefaultApp: undefined;
+  LoginRoutes: undefined;
 };
 
 export type HomeNavigationProp<RouteName extends keyof AppStackParamList> =

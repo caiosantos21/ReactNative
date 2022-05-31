@@ -27,6 +27,11 @@ export const Home = () => {
           description={'DefaultApp'}
           onPress={() => navigateTo('DefaultApp')}
         />
+
+        <CustomListItem
+          description={'LoginRoutes'}
+          onPress={() => navigateTo('LoginRoutes')}
+        />
       </MainContainer>
     </MainBody>
   );
