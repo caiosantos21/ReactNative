@@ -1,6 +1,4 @@
-export enum ExamsModule {
-  moduleName = 'exams',
-  ExamsExam = 'exam',
-  ExamsAnswer = 'answer',
-  ExamsQuestion = 'question',
+export enum StoreModule {
+  moduleName = 'Store',
+  StoreWeapon = 'Weapons',
 }
