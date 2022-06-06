@@ -84,6 +84,8 @@ project.ext.react = [
 
 apply from: "../../node_modules/react-native/react.gradle"
 
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+
 /**
  * Set this to true to create two separate APKs instead of one:
  *   - An APK that only works on ARM devices
@@ -273,7 +275,8 @@ dependencies {
 
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
 
-    implementation project(':watermelondb-jsi') // ⬅️ This!
+    implementation 'com.android.support:multidex:1.0.3' //enter the latest version 
+    // implementation project(':watermelondb-jsi') // ⬅️ This!
     
     debugImplementation("com.facebook.flipper:flipper:0.147.1") {
         exclude group:'com.facebook.fbjni'
@@ -295,6 +298,12 @@ dependencies {
     } else {
         implementation jscFlavor
     }
+}
+
+android {
+  defaultConfig {
+    multiDexEnabled true // This code line
+  }
 }
 
 if (isNewArchitectureEnabled()) {

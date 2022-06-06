@@ -3,6 +3,8 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 export type StoreParams = {
   Home: undefined;
+  Forge: undefined;
+  Emporium: undefined;
 };
 
 export type StoreNavigationProp<RouteName extends keyof StoreParams> =
