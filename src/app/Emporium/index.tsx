@@ -4,8 +4,10 @@ import { MainBody } from '../../core/components/containers';
 
 export const Emporium = () => {
   return (
-    <MainBody>
-      <Text>A</Text>
-    </MainBody>
+    <>
+      <MainBody>
+        <Text>a</Text>
+      </MainBody>
+    </>
   );
 };
